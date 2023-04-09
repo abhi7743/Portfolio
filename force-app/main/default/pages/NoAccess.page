@@ -1,0 +1,53 @@
+<apex:page controller="IRMController" lightningStylesheets="true" id="thePage">
+    <apex:slds />
+    <apex:includeLightning />
+    <div id="Detailscontainer">
+     <apex:form >
+         <apex:outputText id="error-text" rendered="{!btndis}"  style="font-size:20px;" value="{!versionDetails.Title}  {!$Label.NoAccessError}" ></apex:outputText>
+         
+         <apex:inputTextarea id="theTextInput"  value="{!reason}" disabled="{!isEnabled}" rendered="{!btndis}"/><p/><br/>                 
+        <apex:commandButton action="{!save}" id="ActionBtn" value="Request for download"  disabled="{!isEnabled}" rendered="{!btndis}" ></apex:commandButton>
+     </apex:form>
+     <apex:outputText id="outputReason" rendered="{!isEnabled}" style="font-size:20px;" value="You have submitted the request with reason {!reason}"></apex:outputText>
+    </div>
+    
+    
+    <script>
+    function showtoast(){
+        sforce.one.showtoast({"title": "success!","message":"You have raised request for access","type":"success"});
+	}
+    
+    </script>
+    <style>
+        #Detailscontainer{
+        border: 1px solid black;
+        padding: 10px;
+        margin-left:20%;
+        margin-right:20%;
+        margin-top:10%;
+        margin-bottom:30%;
+
+        }
+        body textarea, .slds-vf-scope textarea{
+        width:100%;
+        height:30%;
+        }
+        form{
+        margin-top: 10px;
+        }
+        #theTextInput{
+        width:300px;
+        height:100px;
+             }
+        #thePage:j_id5:error-text{
+        font-size:20px;
+        
+        }
+        #outputReason{
+        font-size:20px;
+        }
+        
+    
+    </style>
+    
+</apex:page>

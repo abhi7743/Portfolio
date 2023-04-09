@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" >
+	<h1> Here We are going to create page</h1>
+    file Id is {!v.recordId}
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <ui:inputText aura:id="articleURL"/>
+</aura:component>

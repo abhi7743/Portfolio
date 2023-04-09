@@ -1,0 +1,18 @@
+<apex:page controller="IRMController1" lightningStylesheets="true" id="thePage">
+    <apex:slds />
+    <apex:includeLightning />
+   <div id="Detailscontainer">
+     <apex:outputText id="outputReason" style="font-size:20px;" value="{!errortext}"></apex:outputText>
+    </div>
+     <style>
+        #Detailscontainer{
+        border: 1px solid black;
+        padding: 10px;
+        margin-left:20%;
+        margin-right:20%;
+        margin-top:10%;
+        margin-bottom:30%;
+
+        }
+         </style>
+</apex:page>
