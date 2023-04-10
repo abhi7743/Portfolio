@@ -1,0 +1,28 @@
+.banner{
+    background:#010214ec;
+    color: #ffff;
+    text-align: center;
+    padding: 32px 16px;
+}
+.name{
+    font-size: 32px;
+    font-weight: 700;
+}
+.designation {
+    font-size: 22px;
+    color: lightblue;
+}
+.location {
+    font-size: 22px;
+    color: lightblue;
+}
+.portfolioImage{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+.social-icon{
+    height:40px;
+    width:40px;
+    margin:16px 16px 0px 0px;
+}
