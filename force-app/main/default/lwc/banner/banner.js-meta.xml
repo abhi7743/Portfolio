@@ -7,4 +7,15 @@
         <target>lightningCommunity__Page</target>
         <target>lightningCommunity__Page_Layout</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="recordId" label="Record Id" type="String" />
+            <property name="linkedinUrl" label="LinkedIn" type="String" />
+            <property name="twitterUrl" label="Twitter" type="String" />
+            <property name="githubUrl" label="Github" type="String" />
+            <property name="youtubeUrl" label="Youtube" type="String" />
+            <property name="trailheadUrl" label="Trailhead" type="String" />
+            <property name="blogUrl" label="Blog" type="String" />
+        </targetConfig>
+    </targetConfigs>
 </LightningComponentBundle>
