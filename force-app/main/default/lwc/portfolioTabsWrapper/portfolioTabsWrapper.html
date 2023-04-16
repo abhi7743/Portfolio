@@ -1,0 +1,19 @@
+<template>
+    <lightning-tabset class="Por" variant="scoped">
+        <lightning-tab label="Summary">
+          <c-summary-tab record-id={recordId} object-api-name={objectApiName}></c-summary-tab>  
+        </lightning-tab>
+        <lightning-tab label="Work Experience">
+            <c-work-experience-tab record-id={recordId}></c-work-experience-tab>
+        </lightning-tab>
+        <lightning-tab label="Skills">
+            Skills
+        </lightning-tab>
+        <lightning-tab label="Education">
+            Education
+        </lightning-tab>
+        <lightning-tab label="Certfications">
+           Certfications
+        </lightning-tab>
+    </lightning-tabset>
+</template>
